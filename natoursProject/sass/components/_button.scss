@@ -12,7 +12,7 @@
   }
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-$size-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -47,7 +47,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -65,27 +65,26 @@
   }
 }
 
-.btn-text{
+.btn-text {
   &:link,
-  &:visited{
+  &:visited {
     font-size: $default-font-size;
     color: $color-primary;
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
-    padding: 3px;
-    transition: all .2s;
+    padding: $size-3px;
+    transition: all 0.2s;
   }
 
-  &:hover{
+  &:hover {
     background-color: $color-primary;
     color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     transform: translateY(-2px);
   }
-  &:active{
-    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0);
-
   }
 }

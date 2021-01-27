@@ -2,8 +2,8 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-  background-color: rgba($color-white, .6);
-  border-radius: 3px;
+  background-color: rgba($color-white, 0.6);
+  border-radius: $size-3px;
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
@@ -53,6 +53,6 @@
 
   &:hover &__img {
     transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%);
+    filter: blur($size-3px) brightness(80%);
   }
 }
